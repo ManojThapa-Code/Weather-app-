@@ -1,0 +1,93 @@
+/* Basic screen layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    transition: background-image 0.3s ease;
+}
+
+/* backgrounds depending on weather */
+.default-bg {
+    background: linear-gradient(120deg, #3b6cb7, #203864);
+}
+
+.sunny-bg {
+    background-image: url("https://images.pexels.com/photos/221471/pexels-photo-221471.jpeg");
+}
+
+.cloudy-bg {
+    background-image: url("https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg");
+}
+
+.rainy-bg {
+    background-image: url("https://images.pexels.com/photos/14753788/pexels-photo-14753788.jpeg");
+}
+
+.snow-bg {
+    background-image: url("https://images.pexels.com/photos/3151907/pexels-photo-3151907.jpeg");
+}
+
+.storm-bg {
+    background-image: url("https://images.pexels.com/photos/1822996/pexels-photo-1822996.jpeg");
+}
+
+/* Card */
+.wrapper {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.weather-box {
+    background: rgba(0,0,0,0.45);
+    padding: 18px 22px;
+    border-radius: 14px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.35);
+}
+
+/* Title */
+.title {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+/* Input + Button */
+.form-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+.form-row button {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 6px;
+    background: #f4c430;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-row button:hover {
+    background: #ffdd57;
+}
+
+#weatherResult h2 {
+    margin-bottom: 6px;
+}
